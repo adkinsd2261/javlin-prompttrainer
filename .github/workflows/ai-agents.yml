@@ -9,6 +9,7 @@ on:
       - 'PROMPTTRAINER_IMPLEMENTATION.md'
       - 'PROMPTTRAINER_BRAND.md'
       - 'PROMPTTRAINER_CONTENT.md'
+  workflow_dispatch:
 
 jobs:
   signal-audit:
@@ -47,3 +48,4 @@ jobs:
           specs: |
             PROMPTTRAINER_BRAND.md
             PROMPTTRAINER_CONTENT.md
+
