@@ -16,37 +16,34 @@ jobs:
     name: Signal Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: 🔍 Signal: audit specs
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Signal: audit specs
         run: |
-          echo "Auditing specs..."
-          echo " - PROMPTTRAINER_PRODUCT.md"
-          echo " - PROMPTTRAINER_UI_SPEC.md"
-          echo " - PROMPTTRAINER_TASKS.md"
+          echo "Auditing PRODUCT, UI_SPEC, TASKS..."
 
   forge-scaffold:
     name: Forge Scaffold
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - uses: actions/checkout@v3
-      - name: ⚙️ Forge: scaffold stubs
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Forge: scaffold stubs
         run: |
-          echo "Scaffolding UI & API stubs..."
-          echo " - from UI_SPEC"
-          echo " - from IMPLEMENTATION"
+          echo "Scaffolding UI & Implementation..."
 
   marketing-copy:
     name: Marketing Copy
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - uses: actions/checkout@v3
-      - name: 📝 Marketing: generate copy
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Marketing: generate copy
         run: |
-          echo "Generating homepage & email copy..."
-          echo " - using BRAND spec"
-          echo " - using CONTENT spec"
+          echo "Generating brand & content drafts..."
+
 
 
 
