@@ -5,30 +5,33 @@ on:
 
 jobs:
   signal-audit:
+    name: Signal Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Signal: audit specs
-        run: |
-          echo "🔍 Signal audit stub"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Signal audit stub
+        run: echo "🔍 Signal audit stub"
 
   forge-scaffold:
+    name: Forge Scaffold
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - uses: actions/checkout@v3
-      - name: Forge: scaffold stub
-        run: |
-          echo "⚙️ Forge scaffold stub"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Forge scaffold stub
+        run: echo "⚙️ Forge scaffold stub"
 
   marketing-copy:
+    name: Marketing Copy
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - uses: actions/checkout@v3
-      - name: Marketing: copy stub
-        run: |
-          echo "📝 Marketing copy stub"
+      - name: Checkout repository
+        uses: actions/checkout@v3
+      - name: Marketing copy stub
+        run: echo "📝 Marketing copy stub"
 
 
 
