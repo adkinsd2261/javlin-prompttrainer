@@ -1,7 +1,16 @@
 name: AI Agent Orchestration
 
 on:
+  push:
+    paths:
+      - 'PROMPTTRAINER_PRODUCT.md'
+      - 'PROMPTTRAINER_UI_SPEC.md'
+      - 'PROMPTTRAINER_TASKS.md'
+      - 'PROMPTTRAINER_IMPLEMENTATION.md'
+      - 'PROMPTTRAINER_BRAND.md'
+      - 'PROMPTTRAINER_CONTENT.md'
   workflow_dispatch:
+
 
 jobs:
   signal-audit:
