@@ -1,52 +1,85 @@
-# PromptTrainer UI Specification
+# PromptTrainer by Javlin — UI Spec v1.1
 
-## 1. Onboarding Flow
-1. **Welcome Splash**  
-   - Headline: “Welcome to Javlin”  
-   - Subhead: “Master AI evaluator tests—one drill at a time.”  
-   - CTA: “Let’s Get Started”
+---
 
-2. **Tour Step 1: Ranking Demo**  
-   - Show sample prompt + two colored example responses  
-   - Tooltip: “Drag to rank 1 (poor)–5 (excellent)”
+## 🗺️ Page Routes
 
-3. **Tour Step 2: Coaching Preview**  
-   - After selecting a rank, show AI‐coaching panel  
-   - Tooltip: “Here’s why a 5/5 looks like this”
+- `/dashboard` — Overview of XP, cert status, recent history
+- `/train` — Skill Drills with rubric and feedback
+- `/evaluate` — Evaluator Sim: timed prompt trials
+- `/certify` — Final certification prompt
+- `/admin` — Prompt manager + user cert view
 
-4. **Tour Step 3: Rewrite Demo**  
-   - Display a low‐score response with an edit box  
-   - Tooltip: “Rewrite this and click ‘Coach Me’ for feedback”
+---
 
-## 2. Practice Screen
-- **Layout**: Prompt at top, answer cards beneath.  
-- **Controls**:  
-  - Rank slider (1–5) on each card  
-  - “Submit” button  
-- **Post‐submit**:  
-  - Show AI exemplar in a right‐side panel  
-  - “Was this helpful? Yes/No” toggle
+## 🧱 Component Guide
 
-## 3. Rewrite Mode
-- **Trigger**: Button on practice result panel  
-- **UI**:  
-  - Text area pre‐filled with original response  
-  - “Coach Me” button  
-  - Coaching panel beneath with AI critique
+### Global
+- Top nav (app name, user avatar, XP bar)
+- Sidebar (Trainer, Evaluator, Cert, Admin links)
+- Modal for feedback, error, or success states
 
-## 4. Dashboard
-- **Streak Display**: Large counter + calendar heatmap  
-- **XP Bar**: Shows progress toward next level  
-- **Recent Activity**: List of last 5 drills with scores  
-- **Badges Shelf**: Icons for milestones (e.g. “First 5/5”)
+### `/train`
+- Prompt card
+- Textarea for user input
+- Rubric scale (5 sliders or pill buttons)
+- Feedback modal (on submit)
 
-## 5. Account & Billing
-- Profile info (email, plan)  
-- Plan selector (Free / Pro / Team)  
-- Payment method form (Stripe embed)  
-- Notification preferences (email / push)
+### `/evaluate`
+- Timer (60–90 seconds)
+- Lock input when time runs out
+- Show results summary after 5 prompts
 
-## 6. Error & Empty States
-- **Network Error**: Full‐screen retry CTA  
-- **No Prompts Left** (free tier): Upsell banner to Pro  
-- **Loading**: Skeleton cards for prompts, spinner for panels  
+### `/dashboard`
+- XP tracker ("Signal Points")
+- Badge display (certs, ranks)
+- Progress snapshot: % passed, history, cert eligibility
+
+---
+
+## 🧩 UI Behavior
+
+| Scenario | Behavior |
+|----------|----------|
+| User not logged in | Redirect to login |
+| Trainer mode active | Feedback shown after submit |
+| Evaluator mode active | No feedback until full session ends |
+| Score <16 | Show "Needs Work" modal |
+| Score 16–20 | Show "Retry" option |
+| Score 21–25 | Show "Pass" with XP boost |
+
+---
+
+## 📱 Mobile-First Design Rules
+
+- Collapse sidebar into hamburger menu
+- Use stacked card layout for prompts
+- Increase tap areas (min 44px)
+- Modal buttons full-width on mobile
+- Swipeable prompt history preview on `/dashboard`
+
+---
+
+## 🧠 UX Feedback System
+
+- Feedback delivered via modal w/ rubric lines:
+  - “Clarity: You missed key supporting detail.”
+  - “Brevity: Response was overly long for platform X.”
+- Retry option = resets prompt
+- XP = awarded only for Pass
+
+---
+
+## 🧪 Trainer vs Evaluator UX Differences
+
+| Feature         | Trainer Mode    | Evaluator Sim       |
+|-----------------|------------------|----------------------|
+| Feedback        | Instant, by rubric | Only after session |
+| Timer           | None             | 60–90 seconds        |
+| Retry option    | Unlimited        | 1 retry max          |
+| XP awarded      | Yes              | Bonus if passed      |
+
+---
+
+**Version**: v1.1  
+**Last Updated**: 2025-06-15  

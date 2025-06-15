@@ -1,51 +1,106 @@
-# PromptTrainer Development Tasks
-
-## Priority Legend
-- **P0** = Must deliver in MVP  
-- **P1** = Important but can wait until post-MVP  
-- **P2** = Nice-to-haves
+# PromptTrainer by Javlin — Build Tasks v1.1
 
 ---
 
-## 1. Backend
+## 🧑‍💼 Owner Roles
 
-- [P0] Auth & User Management  
-  - Signup / Login / JWT middleware  
-- [P0] Prompt API  
-  - `GET /prompts/daily` → returns today’s drills  
-  - `POST /prompts/rank` → save rank & feedback  
-- [P0] Coaching API  
-  - `POST /prompts/coach` → generate 5/5 exemplar via OpenAI  
-- [P0] Stats API  
-  - `GET /user/stats` → streaks, XP, recent scores  
-- [P1] Admin API  
-  - `POST /admin/prompts` → upload new prompt sets  
-  - `GET /admin/usage` → basic analytics
+| Role        | Name       | Responsibility Area                      |
+|-------------|------------|-------------------------------------------|
+| Founder     | D          | Product vision, prompt content, execution |
+| Technical   | Forge      | Frontend, Firebase, scoring logic         |
+| Strategy    | Signal     | User journey, clarity, learner path       |
+| Marketing   | [TBD]      | Copy, email, waitlist, outreach           |
 
-## 2. Frontend
+---
 
-- [P0] Auth Pages  
-  - Login / Signup forms  
-- [P0] Practice Component  
-  - Drill card, rank slider, submit flow  
-- [P0] Coaching Panel  
-  - Exemplar display, “helpful” toggle  
-- [P0] Rewrite Component  
-  - Text area + “Coach Me” button  
-- [P0] Dashboard Page  
-  - Streak counter, calendar, XP bar, recent activity  
-- [P1] Onboarding Tour  
-  - Tooltip library integration  
-- [P1] Billing UI  
-  - Plan switcher, Stripe integration  
-- [P2] Leaderboard & Friends
+## 📋 MVP Build Checklist
 
-## 3. DevOps & QA
+### ✅ Phase 1 — Core App Infrastructure
+- [x] Firebase Auth (email login)
+- [x] Firestore setup (Users, Prompts, Scores)
+- [x] Routing: `/dashboard`, `/train`, `/evaluate`, `/certify`, `/admin`
 
-- [P0] CI/CD pipeline (GitHub Actions)  
-- [P0] Environment setup docs (`.env.example`)  
-- [P0] Unit tests for core APIs  
-- [P0] E2E tests: practice → coach → dashboard  
-- [P1] Analytics integration (PostHog or GA4)  
-- [P1] Rate-limiting / request throttling  
-- [P2] Performance monitoring (Sentry)
+---
+
+### 🔨 Phase 2 — Trainer Mode (Skill Drills)
+- [ ] Prompt display + textarea
+- [ ] Rubric score inputs (1–5 per category)
+- [ ] Feedback modal w/ sentence templates
+- [ ] Store result in Firestore
+- [ ] Award XP + update dashboard
+
+**Owner**: Forge  
+**Support**: D (prompt/rubric design)
+
+---
+
+### 🔨 Phase 3 — Evaluator Sim Mode
+- [ ] Timer for 60–90 sec per prompt
+- [ ] 5-prompt session logic
+- [ ] Lock input after timer ends
+- [ ] Show results summary
+- [ ] Eligibility check for certification
+
+**Owner**: Forge  
+**Support**: D, Signal (test UX logic)
+
+---
+
+### 🔨 Phase 4 — Certification System
+- [ ] Final challenge prompt display
+- [ ] Score using rubric logic
+- [ ] Generate PDF + badge
+- [ ] Public cert link `/certs/[username]`
+- [ ] Manual cert grant (admin)
+
+**Owner**: Forge  
+**Support**: D (content), Signal (flow UX)
+
+---
+
+### 🔨 Phase 5 — Admin Dashboard
+- [ ] Create/edit prompt UI
+- [ ] Flag review system
+- [ ] Score override (manual pass/fail)
+- [ ] Export to CSV
+
+**Owner**: Forge  
+**Support**: D (content needs)
+
+---
+
+### 🔨 Phase 6 — UX / Gamification
+- [ ] XP Tracker
+- [ ] Streak logic (daily engagement)
+- [ ] Locked badge previews
+- [ ] Cert eligibility banner on dashboard
+
+**Owner**: Forge  
+**Support**: Signal (motivational clarity)
+
+---
+
+## 🎯 Launch Preparation
+
+### 🔜 June 15–25
+- [ ] Waitlist page (Marketing)
+- [ ] First test prompts (D)
+- [ ] Build log setup (Signal)
+
+### 🧪 June 25–30
+- [ ] Internal alpha test group (D + Signal)
+- [ ] Prompt feedback logging (Forge)
+- [ ] Final polish round
+
+---
+
+## 🚀 Launch Week (July 1)
+- Open prompt trainer to early users
+- Certification unlock enabled
+- Launch tweets + Start waitlist outreach
+
+---
+
+**Version**: v1.1  
+**Last Updated**: 2025-06-15  
+

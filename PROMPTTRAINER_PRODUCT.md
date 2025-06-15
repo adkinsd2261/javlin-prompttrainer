@@ -1,51 +1,116 @@
-# PromptTrainer Product Specification
+# PromptTrainer by Javlin — Product Spec v1.1
 
-## 1. Vision & Positioning
-**Javlin** is an AI‐driven training platform that helps aspiring prompt engineers and AI‐evaluator candidates master real‐world ranking and feedback exercises through guided practice and instant coaching.
+## 🧠 Mission
+Make prompt engineering learnable, repeatable, and monetizable — preparing users for evaluator jobs at Outlier, DataAnnotation, Surge, and beyond.
 
-## 2. Problem Statement
-- **Unprepared candidates:** Thousands apply to AI evaluator jobs without targeted, hands‐on practice.
-- **Lack of interactive training:** Existing resources are static guides or forums—no drill‐based environment.
-- **Unclear standards:** Applicants don’t know what differentiates a “3/5” from a “5/5” evaluation.
+---
 
-## 3. Target Personas
-1. **Career‐Changer**  
-   - Wants a fast, guided way to prep for evaluator tests.  
-   - Needs bite‐sized drills with clear feedback.
+## 👤 User Roles
 
-2. **Prompt Engineer**  
-   - Seeks to benchmark and sharpen prompt‐ranking skills.  
-   - Values measurable progress and credentials.
+- **Learner**: Anyone training in prompt engineering using Skill Drills
+- **Evaluator**: Simulated job-test mode with real constraints
+- **Admin**: Manage prompt content, users, and certifications
 
-3. **L&D Manager**  
-   - Needs an on‐demand training tool to certify evaluator contractors.  
-   - Values analytics and group‐management features.
+---
 
-## 4. Core User Stories
-1. As a **user**, I want to rank a set of AI responses (1–5) so I can practice test conditions.  
-2. As a **user**, I want to see an AI‐generated 5/5 exemplar and rationale so I understand scoring criteria.  
-3. As a **user**, I want to rewrite a low‐scoring response and get AI critique so I learn to craft better outputs.  
-4. As a **user**, I want to view my streak and score history on a dashboard so I stay motivated.  
-5. As an **admin**, I want to upload new prompt‐response sets so content stays fresh.  
-6. As a **user**, I want to pause/resume my streak in case of travel or time off.  
-7. As a **user**, I want in‐UI help definitions (e.g. “What makes a 3/5?”) so I’m never confused.
+## ✅ MVP Scope
 
-## 5. Success & Kill Metrics
-- **Success**:  
-  - 30‐day retention ≥ 20%  
-  - Free→paid conversion ≥ 7%  
-  - ≥ 80% users rate coaching as “helpful”
+### Included:
+- Trainer Mode (prompt + rubric + feedback)
+- Evaluator Mode (timed prompt sessions)
+- Certification System (PromptPass)
+- Admin Dashboard (prompts, scores, certs)
+- XP & progress tracking (“Signal Points”)
 
-- **Kill**:  
-  - < 3% conversion after 1,000 free users  
-  - < 50% “helpful” coaching rating after first 100 drills  
-  - Average session < 5 minutes
+### Excluded:
+- Native mobile app
+- Paid prompt marketplace
+- Real job platform integration
 
-## 6. Go-To-Market Channels
-- Discord & Reddit AI-evaluator communities  
-- Partnerships with prompt-engineering bootcamps  
-- Content marketing: “How to Ace the Outlier Evaluator Test” guides  
+---
 
- …your last line of content
-+
-+# test trigger
+## 🎯 Core Features
+
+### 1. Skill Drills (Trainer Mode)
+- Practice prompt responses with rubric scoring (Clarity, Relevance, Depth, Brevity, Reasoning)
+- Score: 1–5 per category → Total /25
+- Feedback generated per rubric area
+
+### 2. Evaluator Sim
+- Timed tests mimicking evaluator platform challenges
+- No feedback until end of session
+- Must pass 3/5 to unlock certification
+
+### 3. PromptPass Certification
+- Final challenge prompt scored for mastery
+- Generates badge + downloadable PDF
+- Verifiable via `/certs/[username]`
+
+---
+
+## 🧪 Prompt Structure & Logic
+
+### Metadata:
+- Difficulty: 1–5
+- Category: Writing, Reasoning, Inference, etc.
+- Type: Essay, List, Structured Reasoning
+- Source: Curated or AI-generated (via admin prompt builder)
+
+### Generation Flow:
+1. Admin creates base prompt
+2. AI generates variations
+3. Admin tags metadata
+4. Final prompt published
+
+---
+
+## 🧾 Certification Logic
+
+- Must pass: 3/5 Evaluator prompts
+- Then pass: Final Certification prompt
+- Output: Verified PDF + badge
+- Public proof: `/certs/[username]` link
+
+---
+
+## 💸 Monetization Plan
+
+- Free for first 100 users
+- Then $29 one-time fee for certification
+- Includes PromptPass + job board access (future)
+
+---
+
+## 📈 Progress & Gamification
+
+- “Signal Points” XP for successful prompts
+- Streak counter + badges
+- Dashboard shows % passed, latest scores, rank
+
+---
+
+## 🔐 Admin Tools
+
+- Create/edit prompts
+- View flagged content
+- Review response queues
+- Override cert manually
+- Export user/pass data
+
+---
+
+## 🧭 Branding
+
+- **Product**: PromptTrainer by Javlin
+- **XP**: Signal Points
+- **Trainer Prompts**: Skill Drills
+- **Evaluator Tests**: Trial Sim
+- **Certification**: PromptPass
+- **Voice**: Calm. Precise. Motivating.
+- **Color Palette**: #0E0E0E, #51C2FF, #FF5151, #EAEAEA
+- **Font**: Inter 500/600
+
+---
+
+**Version**: v1.1  
+**Last Updated**: 2025-06-15  
