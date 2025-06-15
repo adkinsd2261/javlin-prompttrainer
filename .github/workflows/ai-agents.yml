@@ -1,48 +1,35 @@
 name: AI Agent Orchestration
 
 on:
-  push:
-    paths:
-      - 'PROMPTTRAINER_PRODUCT.md'
-      - 'PROMPTTRAINER_UI_SPEC.md'
-      - 'PROMPTTRAINER_TASKS.md'
-      - 'PROMPTTRAINER_IMPLEMENTATION.md'
-      - 'PROMPTTRAINER_BRAND.md'
-      - 'PROMPTTRAINER_CONTENT.md'
   workflow_dispatch:
 
 jobs:
   signal-audit:
-    name: Signal Audit
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
+      - uses: actions/checkout@v3
       - name: Signal: audit specs
         run: |
-          echo "Auditing PRODUCT, UI_SPEC, TASKS..."
+          echo "🔍 Signal audit stub"
 
   forge-scaffold:
-    name: Forge Scaffold
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Forge: scaffold stubs
+      - uses: actions/checkout@v3
+      - name: Forge: scaffold stub
         run: |
-          echo "Scaffolding UI & Implementation..."
+          echo "⚙️ Forge scaffold stub"
 
   marketing-copy:
-    name: Marketing Copy
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - name: Checkout repository
-        uses: actions/checkout@v3
-      - name: Marketing: generate copy
+      - uses: actions/checkout@v3
+      - name: Marketing: copy stub
         run: |
-          echo "Generating brand & content drafts..."
+          echo "📝 Marketing copy stub"
+
 
 
 
