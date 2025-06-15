@@ -1,6 +1,13 @@
+# .github/actions/forge-scaffold/action.yml
 name: "Forge Scaffold"
-description: "Scaffold code from UI_SPEC and IMPLEMENTATION"
+description: "Scaffold code stubs from UI and Implementation specs"
+
 runs:
   using: "composite"
   steps:
-    - run: echo "⚙️ Forge: scaffolding UI & API stubs…"
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Forge: scaffold stubs
+      run: |
+        echo "⚙️ Scaffolding UI and API stubs from specs..."

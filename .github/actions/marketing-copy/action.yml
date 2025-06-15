@@ -1,6 +1,13 @@
+# .github/actions/marketing-copy/action.yml
 name: "Marketing Copy"
-description: "Draft homepage & email copy from BRAND & CONTENT"
+description: "Draft homepage & email copy from Brand & Content specs"
+
 runs:
   using: "composite"
   steps:
-    - run: echo "📝 Marketing: generating homepage and email drafts…"
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Marketing: generate copy
+      run: |
+        echo "📝 Generating homepage and email drafts..."

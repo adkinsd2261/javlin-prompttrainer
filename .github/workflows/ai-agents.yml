@@ -13,26 +13,35 @@ on:
 
 jobs:
   signal-audit:
+    name: Signal Audit
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v3
-      - name: Signal Audit
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Signal: audit specs
         uses: ./.github/actions/signal-audit
 
   forge-scaffold:
+    name: Forge Scaffold
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - uses: actions/checkout@v3
-      - name: Forge Scaffold
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Forge: scaffold stubs
         uses: ./.github/actions/forge-scaffold
 
   marketing-copy:
+    name: Marketing Copy
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - uses: actions/checkout@v3
-      - name: Marketing Copy
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Marketing: generate copy
         uses: ./.github/actions/marketing-copy
 
 

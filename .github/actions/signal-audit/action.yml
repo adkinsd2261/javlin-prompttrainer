@@ -1,6 +1,16 @@
+# .github/actions/signal-audit/action.yml
 name: "Signal Audit"
 description: "Run spec audits on PromptTrainer MD files"
+
 runs:
   using: "composite"
   steps:
-    - run: echo "🔍 Signal: auditing PRODUCT, UI_SPEC, TASKS…"
+    - name: Checkout repo
+      uses: actions/checkout@v3
+
+    - name: Signal: audit specs
+      run: |
+        echo "🔍 Running Signal audit on:"
+        echo "  - PROMPTTRAINER_PRODUCT.md"
+        echo "  - PROMPTTRAINER_UI_SPEC.md"
+        echo "  - PROMPTTRAINER_TASKS.md"
