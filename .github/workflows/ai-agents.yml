@@ -1,0 +1,49 @@
+name: AI Agent Orchestration
+
+on:
+  push:
+    paths:
+      - 'PROMPTTRAINER_PRODUCT.md'
+      - 'PROMPTTRAINER_UI_SPEC.md'
+      - 'PROMPTTRAINER_TASKS.md'
+      - 'PROMPTTRAINER_IMPLEMENTATION.md'
+      - 'PROMPTTRAINER_BRAND.md'
+      - 'PROMPTTRAINER_CONTENT.md'
+
+jobs:
+  signal-audit:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v3
+      - name: Signal Audit
+        uses: your-org/signal-audit-action@v1
+        with:
+          specs: |
+            PROMPTTRAINER_PRODUCT.md
+            PROMPTTRAINER_UI_SPEC.md
+            PROMPTTRAINER_TASKS.md
+
+  forge-scaffold:
+    runs-on: ubuntu-latest
+    needs: signal-audit
+    steps:
+      - uses: actions/checkout@v3
+      - name: Forge Scaffold
+        uses: your-org/forge-scaffold-action@v1
+        with:
+          specs: |
+            PROMPTTRAINER_UI_SPEC.md
+            PROMPTTRAINER_IMPLEMENTATION.md
+            PROMPTTRAINER_TASKS.md
+
+  marketing-copy:
+    runs-on: ubuntu-latest
+    needs: signal-audit
+    steps:
+      - uses: actions/checkout@v3
+      - name: Marketing Copy
+        uses: your-org/marketing-copy-action@v1
+        with:
+          specs: |
+            PROMPTTRAINER_BRAND.md
+            PROMPTTRAINER_CONTENT.md
