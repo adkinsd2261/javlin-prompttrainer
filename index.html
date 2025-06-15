@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>PromptTrainer by Javlin — Get Certified</title>
+  <link rel="stylesheet" href="public/styles.css" />
+  <link rel="icon" href="assets/favicon.png" type="image/png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Train your prompts. Prove your skills. Master evaluator tests with real drills, feedback, and certification from Javlin.">
+  <meta property="og:title" content="PromptTrainer by Javlin">
+  <meta property="og:description" content="Train your prompts. Prove your skills. Master evaluator tests and earn your PromptPass.">
+  <meta property="og:image" content="assets/social-preview.png">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+</head>
+<body>
+
+  <!-- 🧠 HERO -->
+  <header class="hero">
+    <div class="container">
+      <div class="hero-logo-wrap">
+        <img src="assets/javlin-logo.png" alt="Javlin logo" class="hero-logo-img" />
+      </div>
+      <h1>Master AI Evaluator Tests—<span class="highlight">One Drill at a Time</span></h1>
+      <p class="subhead">
+        Real-world prompt drills, instant AI coaching, and your own PromptPass certification.
+      </p>
+
+      <form id="waitlistForm" class="waitlist-form">
+        <input type="email" id="email" placeholder="Enter your email to join" required />
+        <button type="submit">Join the Waitlist</button>
+        <p class="error-msg">Please enter a valid email address.</p>
+        <p class="success-msg">Thanks for joining! We’ll be in touch soon.</p>
+      </form>
+    </div>
+  </header>
+
+  <!-- 🌟 FEATURES -->
+  <section class="features container">
+    <div class="feature">
+      <h3>🧠 Real Drills</h3>
+      <p>Rank AI responses with evaluator rubrics. Practice like it’s the real thing.</p>
+    </div>
+    <div class="feature">
+      <h3>⚡ Instant Feedback</h3>
+      <p>Get expert-level rationale for each choice — clarity, relevance, and more.</p>
+    </div>
+    <div class="feature">
+      <h3>🏆 Earn XP & Certs</h3>
+      <p>Track Signal Points, hit streaks, and unlock your downloadable PromptPass.</p>
+    </div>
+  </section>
+
+  <!-- 🎓 PROMPTPASS -->
+  <section class="cert-preview container">
+    <h2>Why Certify?</h2>
+    <p class="cert-text">
+      For just <strong>$20</strong>, you can unlock Evaluator Mode, pass the final drill, and receive your verifiable certification. Show it off on your resume, LinkedIn, or anywhere.
+    </p>
+    <div class="cert-images">
+      <img src="assets/badge-cert-preview.png" alt="PromptPass Certification Preview" />
+    </div>
+  </section>
+
+  <!-- 📣 FOOTER -->
+  <footer class="footer container">
+    <p class="brand">PromptTrainer by <strong>Javlin</strong></p>
+    <p class="coming-soon">Launching July 1 · Signal Points. Certs. Confidence.</p>
+  </footer>
+
+  <script>
+    const form = document.getElementById('waitlistForm');
+    const emailInput = document.getElementById('email');
+    const errorMsg = document.querySelector('.error-msg');
+    const successMsg = document.querySelector('.success-msg');
+
+    form.addEventListener('submit', function (e) {
+      e.preventDefault();
+      const email = emailInput.value.trim();
+      const valid = /^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email);
+      if (!valid) {
+        errorMsg.style.display = 'block';
+        successMsg.style.display = 'none';
+        return;
+      }
+      errorMsg.style.display = 'none';
+      successMsg.style.display = 'block';
+      emailInput.value = '';
+    });
+  </script>
+
+</body>
+</html>
