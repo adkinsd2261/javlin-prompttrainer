@@ -1,0 +1,6 @@
+name: "Forge Scaffold"
+description: "Scaffold code from UI_SPEC and IMPLEMENTATION"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "⚙️ Forge: scaffolding UI & API stubs…"

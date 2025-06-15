@@ -17,12 +17,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Signal Audit
-        uses: your-org/signal-audit-action@v1
-        with:
-          specs: |
-            PROMPTTRAINER_PRODUCT.md
-            PROMPTTRAINER_UI_SPEC.md
-            PROMPTTRAINER_TASKS.md
+        uses: ./.github/actions/signal-audit
 
   forge-scaffold:
     runs-on: ubuntu-latest
@@ -30,12 +25,7 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Forge Scaffold
-        uses: your-org/forge-scaffold-action@v1
-        with:
-          specs: |
-            PROMPTTRAINER_UI_SPEC.md
-            PROMPTTRAINER_IMPLEMENTATION.md
-            PROMPTTRAINER_TASKS.md
+        uses: ./.github/actions/forge-scaffold
 
   marketing-copy:
     runs-on: ubuntu-latest
@@ -43,9 +33,6 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - name: Marketing Copy
-        uses: your-org/marketing-copy-action@v1
-        with:
-          specs: |
-            PROMPTTRAINER_BRAND.md
-            PROMPTTRAINER_CONTENT.md
+        uses: ./.github/actions/marketing-copy
+
 

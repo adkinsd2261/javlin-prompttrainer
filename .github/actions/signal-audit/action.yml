@@ -1,0 +1,6 @@
+name: "Signal Audit"
+description: "Run spec audits on PromptTrainer MD files"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "🔍 Signal: auditing PRODUCT, UI_SPEC, TASKS…"

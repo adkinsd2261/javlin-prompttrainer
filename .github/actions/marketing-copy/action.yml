@@ -1,0 +1,6 @@
+name: "Marketing Copy"
+description: "Draft homepage & email copy from BRAND & CONTENT"
+runs:
+  using: "composite"
+  steps:
+    - run: echo "📝 Marketing: generating homepage and email drafts…"
