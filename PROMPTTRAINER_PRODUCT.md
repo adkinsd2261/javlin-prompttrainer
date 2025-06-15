@@ -21,6 +21,8 @@ Make prompt engineering learnable, repeatable, and monetizable — preparing use
 - Certification System (PromptPass)
 - Admin Dashboard (prompts, scores, certs)
 - XP & progress tracking (“Signal Points”)
+- PromptPass Badge + downloadable Certificate PDF
+- Optional: Donation prompt post-cert
 
 ### Excluded:
 - Native mobile app
@@ -45,6 +47,7 @@ Make prompt engineering learnable, repeatable, and monetizable — preparing use
 - Final challenge prompt scored for mastery
 - Generates badge + downloadable PDF
 - Verifiable via `/certs/[username]`
+- Optional donation option appears after cert is issued
 
 ---
 
@@ -70,22 +73,25 @@ Make prompt engineering learnable, repeatable, and monetizable — preparing use
 - Then pass: Final Certification prompt
 - Output: Verified PDF + badge
 - Public proof: `/certs/[username]` link
+- Post-cert: Prompt to support the mission (donate)
 
 ---
 
-## 💸 Monetization Plan
+## 💸 Monetization Plan (Updated v1.1)
 
-- Free for first 100 users
-- Then $29 one-time fee for certification
-- Includes PromptPass + job board access (future)
+| Tier             | Includes                                                       | Price  |
+|------------------|----------------------------------------------------------------|--------|
+| **Free**         | Skill Drills (Trainer Mode), XP tracker, rubric feedback       | $0     |
+| **PromptPass**   | Evaluator Mode + Cert Prompt + Feedback + PDF + Badge          | **$20** (one-time) |
+| **Optional Support** | Post-cert support button (Buy Me a Coffee / Stripe)            | Custom amount |
 
 ---
 
 ## 📈 Progress & Gamification
 
 - “Signal Points” XP for successful prompts
-- Streak counter + badges
-- Dashboard shows % passed, latest scores, rank
+- Streak counter + badge unlocks
+- Dashboard shows % passed, latest scores, cert eligibility
 
 ---
 
@@ -96,6 +102,7 @@ Make prompt engineering learnable, repeatable, and monetizable — preparing use
 - Review response queues
 - Override cert manually
 - Export user/pass data
+- View donation log (if enabled)
 
 ---
 
@@ -113,4 +120,4 @@ Make prompt engineering learnable, repeatable, and monetizable — preparing use
 ---
 
 **Version**: v1.1  
-**Last Updated**: 2025-06-15  
+**Last Updated**: 2025-06-15

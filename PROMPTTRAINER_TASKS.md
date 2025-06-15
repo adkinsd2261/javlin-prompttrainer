@@ -1,106 +1,47 @@
-# PromptTrainer by Javlin — Build Tasks v1.1
+# PromptTrainer Tasks v1.1
 
----
+## 🧩 Product Build
 
-## 🧑‍💼 Owner Roles
+- [x] Trainer Mode interface
+- [x] Rubric feedback engine
+- [x] Evaluator Mode with timer
+- [x] PromptPass certification logic
+- [x] Prompt metadata schema
+- [x] Admin panel: prompts + certs
+- [x] XP system + Signal Points
+- [x] Cert badge + downloadable PDF
+- [ ] Cert PDF dynamic generator (Forge)
+- [ ] Cert ID + public link (`/certs/username`)
 
-| Role        | Name       | Responsibility Area                      |
-|-------------|------------|-------------------------------------------|
-| Founder     | D          | Product vision, prompt content, execution |
-| Technical   | Forge      | Frontend, Firebase, scoring logic         |
-| Strategy    | Signal     | User journey, clarity, learner path       |
-| Marketing   | [TBD]      | Copy, email, waitlist, outreach           |
+## 💸 Monetization
 
----
+- [x] $20 PromptPass logic
+- [x] Stripe/BuyMeACoffee donation link post-cert
+- [ ] Add donation UI to cert completion screen
+- [ ] Include donation in admin dashboard
 
-## 📋 MVP Build Checklist
+## 📈 Marketing Ops
 
-### ✅ Phase 1 — Core App Infrastructure
-- [x] Firebase Auth (email login)
-- [x] Firestore setup (Users, Prompts, Scores)
-- [x] Routing: `/dashboard`, `/train`, `/evaluate`, `/certify`, `/admin`
+- [x] Waitlist copy + launch tweet thread
+- [x] PromptPass cert image asset
+- [x] PromptPass cert PDF layout
+- [x] Hero copy: “Train like a prompter. Get certified.”
+- [x] Post-cert badge social template
+- [ ] LinkedIn resume cert blurb
+- [ ] Public embed badge
 
----
+## 🧪 QA Checklist (Due June 25)
 
-### 🔨 Phase 2 — Trainer Mode (Skill Drills)
-- [ ] Prompt display + textarea
-- [ ] Rubric score inputs (1–5 per category)
-- [ ] Feedback modal w/ sentence templates
-- [ ] Store result in Firestore
-- [ ] Award XP + update dashboard
+- [ ] Trainer UX flows clean on mobile
+- [ ] Evaluator timeouts correctly
+- [ ] Score buckets return expected feedback
+- [ ] Cert PDF data fills properly
+- [ ] Badge displays in dashboard and cert page
 
-**Owner**: Forge  
-**Support**: D (prompt/rubric design)
+## 🗓 Launch Prep
 
----
-
-### 🔨 Phase 3 — Evaluator Sim Mode
-- [ ] Timer for 60–90 sec per prompt
-- [ ] 5-prompt session logic
-- [ ] Lock input after timer ends
-- [ ] Show results summary
-- [ ] Eligibility check for certification
-
-**Owner**: Forge  
-**Support**: D, Signal (test UX logic)
-
----
-
-### 🔨 Phase 4 — Certification System
-- [ ] Final challenge prompt display
-- [ ] Score using rubric logic
-- [ ] Generate PDF + badge
-- [ ] Public cert link `/certs/[username]`
-- [ ] Manual cert grant (admin)
-
-**Owner**: Forge  
-**Support**: D (content), Signal (flow UX)
-
----
-
-### 🔨 Phase 5 — Admin Dashboard
-- [ ] Create/edit prompt UI
-- [ ] Flag review system
-- [ ] Score override (manual pass/fail)
-- [ ] Export to CSV
-
-**Owner**: Forge  
-**Support**: D (content needs)
-
----
-
-### 🔨 Phase 6 — UX / Gamification
-- [ ] XP Tracker
-- [ ] Streak logic (daily engagement)
-- [ ] Locked badge previews
-- [ ] Cert eligibility banner on dashboard
-
-**Owner**: Forge  
-**Support**: Signal (motivational clarity)
-
----
-
-## 🎯 Launch Preparation
-
-### 🔜 June 15–25
-- [ ] Waitlist page (Marketing)
-- [ ] First test prompts (D)
-- [ ] Build log setup (Signal)
-
-### 🧪 June 25–30
-- [ ] Internal alpha test group (D + Signal)
-- [ ] Prompt feedback logging (Forge)
-- [ ] Final polish round
-
----
-
-## 🚀 Launch Week (July 1)
-- Open prompt trainer to early users
-- Certification unlock enabled
-- Launch tweets + Start waitlist outreach
-
----
-
-**Version**: v1.1  
-**Last Updated**: 2025-06-15  
-
+- [x] Finalize all .md docs
+- [ ] Upload badge + cert visuals to `/assets/`
+- [ ] Confirm Stripe setup for PromptPass + donation
+- [ ] Activate waitlist push
+- [ ] Schedule internal test flight (June 25)

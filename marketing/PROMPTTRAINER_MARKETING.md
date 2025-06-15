@@ -1,93 +1,121 @@
-# 📣 PromptTrainer by Javlin — Marketing Launch Guide v1.0
+PromptTrainer by Javlin — Marketing Launch Guide v1.1
 
-## 🎯 Goal
-Build early traction and trust leading up to our public launch on July 1. All efforts focus on helping learners, job-switchers, and gig seekers see PromptTrainer as the fastest, smartest way to pass evaluator tests and enter the AI workforce.
+🎯 Goal
 
----
+Build early traction and trust leading into our July 1 public launch. All efforts focus on helping learners, job-switchers, and gig seekers see PromptTrainer as the fastest, smartest way to pass evaluator tests and enter the AI workforce.
 
-## 🧠 Brand Positioning
+🧠 Brand Positioning
 
-**Tagline Options:**
-- *Train your signal. Certify your mind.*
-- *Built to help you pass AI evaluator tests — not just learn prompts.*
+Tagline Options:
 
-**Voice:** Calm. Precise. Motivating.  
-**Tone:** Grounded, high-trust, no-hype.  
-**Naming System:**
-- XP = Signal Points  
-- Trainer Mode = Skill Drills  
-- Evaluator Mode = Trial Sim  
-- Certification = PromptPass  
+Train your signal. Certify your mind.
 
-**Visuals:**
-- Dark interface with neon accent highlights  
-- Futuristic but clean layout  
-- Javlin bolt/brain logo as brand stamp  
+Built to help you pass AI evaluator tests — not just learn prompts.
 
----
+Free to learn. $20 to prove it.
 
-## 📍 Core Channels
+Voice: Calm. Precise. Motivating.
+Tone: Grounded, high-trust, no-hype.
+Naming System:
 
-| Channel            | Purpose                                | Status               |
-|--------------------|-----------------------------------------|----------------------|
-| X / Twitter        | Build log, audience traction             | ✅ Setup: @JavlinDev / @JavlinApp |
-| Waitlist Page      | Convert interest into early adopters     | 🔜 In progress       |
-| LinkedIn           | Founder storytelling, career angle       | 🔜 To post           |
-| Starter Story Build| SEO, updates, and credibility           | 🔜 Staged             |
-| Badge Assets       | Trust signal and social cert sharing     | 🔜 To design         |
+XP = Signal Points
 
----
+Trainer Mode = Skill Drills
 
-## 📆 Launch Content Timeline (June 15–July 1)
+Evaluator Mode = Trial Sim
 
-| Date Range    | Deliverables                                                |
-|---------------|-------------------------------------------------------------|
-| June 15–18    | ✔ Cert badge copy + mockup<br>✔ Launch tweet thread<br>✔ Hero copy for waitlist |
-| June 19–23    | Publish waitlist<br>Start daily logs<br>Launch backstory on X + LinkedIn |
-| June 24–30    | Badge previews, countdown tweets, Signal Points teaser posts |
-| July 1        | 🚀 GO LIVE + PromptPass unlocked + cert share visuals        |
+Certification = PromptPass
 
----
+Visuals:
 
-## ✍️ Copywriting To-Dos
+Dark interface with neon accent highlights
 
-- [ ] Hero headline + CTA for waitlist  
-- [ ] Launch tweet thread (10 posts max)  
-- [ ] PromptPass cert social post (image + copy)  
-- [ ] “Why PromptTrainer?” founder backstory  
-- [ ] Engagement post: “Ever tried passing an Outlier test?”  
+Futuristic but clean layout
 
----
+Javlin bolt/brain logo as brand stamp
 
-## 🎨 Visual Asset Needs
+📍 Core Channels
 
-- [ ] PromptPass Certification badge (light + dark mode)  
-- [ ] UI Screenshot mockup (Trainer Mode in action)  
-- [ ] XP bar with Signal Points visual  
-- [ ] Javlin bolt logo in SVG for all uses  
-- [ ] Badge for sharing on LinkedIn: “PromptPass Certified by Javlin”  
+Channel
 
----
+Purpose
 
-## 🧠 Daily X Log Format (Template)
+Status
 
+Twitter/X
+
+Build log, audience, traction
+
+✅ Setup: @JavlinDev / @JavlinApp
+
+Waitlist
+
+Convert interest into early users
+
+🔜 In progress
+
+LinkedIn
+
+Founder storytelling, job angle
+
+🔜 To post
+
+Starter Story Build
+
+SEO, updates, credibility
+
+🔜 Staged
+
+Badge Assets
+
+Trust signal, viral cert sharing
+
+✅ Badge + Certificate generated
+
+Donation Support
+
+Support the mission after cert
+
+🔜 Add to site footer + post-cert
+
+📆 Launch Content Timeline (June 15–July 1)
+
+Date Range
+
+Deliverables
+
+June 15–18
+
+✔ Cert badge copy + mockup✔ Launch tweet thread✔ Hero copy for waitlist
+
+June 19–23
+
+Publish waitlistStart daily logsLaunch backstory on X + LinkedIn
+
+June 24–30
+
+Badge previews, countdown tweets, Signal Points teaser posts
+
+July 1
+
+🚀 GO LIVE + PromptPass unlocked + Cert share visuals
+
+✍️ Copywriting To-Dos
+
+
+
+🎨 Visual Asset Needs
+
+
+
+🧠 Daily X Log Format (Template)
 
 ✅ Day X of building PromptTrainer by Javlin:
 
-Shipped: [feature]
-
-Blocked by: [if anything]
-
-What I learned today: [insight]
+- Shipped: [feature]
+- Blocked by: [if anything]
+- What I learned today: [insight]
 
 Let’s keep the signal sharp. #buildinpublic #promptengineering
 
-yaml
-Copy
-Edit
-
----
-
-**Version**: v1.0  
-**Owner**: Marketing Bot + D  
-**Updated**: 2025-06-15  
+Version: v1.1Owner: Marketing Bot + DUpdated: 2025-06-15
