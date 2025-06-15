@@ -16,10 +16,10 @@ jobs:
     name: Signal Audit
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Signal: audit specs
+      - name: Run Signal Audit
         uses: ./.github/actions/signal-audit
 
   forge-scaffold:
@@ -27,10 +27,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Forge: scaffold stubs
+      - name: Run Forge Scaffold
         uses: ./.github/actions/forge-scaffold
 
   marketing-copy:
@@ -38,10 +38,10 @@ jobs:
     runs-on: ubuntu-latest
     needs: signal-audit
     steps:
-      - name: Checkout repo
+      - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Marketing: generate copy
+      - name: Run Marketing Copy
         uses: ./.github/actions/marketing-copy
 
 
